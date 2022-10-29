@@ -1,7 +1,7 @@
 from Module import tab_donne
 
 TABLEAU = tab_donne.tab_data('../Data/info_img.png.txt')
-MASQUE_BOOL = TABLEAU<100
+MASQUE_BOOL = TABLEAU<200
 
 def pixel_non_blanc():
 
