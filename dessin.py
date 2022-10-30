@@ -45,9 +45,13 @@ def dessin():
 
     liste_pixel = pixel_non_blanc()
 
+    cpt_pix = 0
     for elem in liste_pixel:
         for pos in elem:
+           #  cpt_pix += 1 pour GIF
             image.putpixel(pos, (0, 0, 0))
+            # if cpt_pix % 1000 == 0 : pour GIF
+            #    image.save(f'GIF/test_gif_{cpt_pix}.png') pour GIF
     image.save('Résultats/test.png')
     image.show()
 
